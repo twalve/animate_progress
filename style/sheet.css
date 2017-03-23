@@ -5,3 +5,9 @@ shelf {
 shelf {
     background: orange;
 }
+
+shelf li > div {
+    background-size: cover !important;
+    height: 0;
+    padding-top: calc(100% / (16/9));
+}

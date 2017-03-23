@@ -7,6 +7,10 @@ header {
     position: absolute;
 }
 
+h1, h2 {
+    margin: 0;
+}
+
 footer {
     display: none;
     position: absolute;

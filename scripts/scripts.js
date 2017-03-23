@@ -21,7 +21,7 @@
                 compounds.appendChild(compound);
             }
 
-            shelf.innerHTML = compounds.innerHTML;
+            shelf.appendChild(compounds);
         },
         fetch: function () {
             PRGRSS.SHOWS = SHOWS;

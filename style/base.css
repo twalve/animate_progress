@@ -1,5 +1,14 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
     background: transparent;
+    font-size: 1rem;
+}
+
+body * {
+    box-sizing: border-box;
 }
 
 header {

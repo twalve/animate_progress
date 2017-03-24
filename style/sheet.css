@@ -6,8 +6,17 @@ shelf {
     background: orange;
 }
 
+shelf > ul > li {
+    position: relative;
+}
+
 shelf li > div {
     background-size: cover !important;
     height: 0;
     padding-top: calc(100% / (16/9));
+}
+
+shelf li > div > h2 {
+    position: absolute;
+    bottom: .5rem;
 }

@@ -5,13 +5,14 @@ html {
 body {
     background: transparent;
     font-size: 1rem;
+    margin: 0;
 }
 
 body * {
     box-sizing: border-box;
 }
 
-header {
+main > header {
     display: none;
     position: absolute;
 }

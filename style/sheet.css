@@ -1,3 +1,13 @@
+body {
+    font-family: Lato, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+section {
+    /*margin-left: 20vw;
+body: width: 80vw;*/
+}
+
 shelf {
     display: block;
 }
@@ -10,13 +20,38 @@ shelf > ul > li {
     position: relative;
 }
 
-shelf li > div {
+tile {
+    display: block;
+}
+
+shelf tile {
     background-size: cover !important;
     height: 0;
     padding-top: calc(100% / (16/9));
 }
 
-shelf li > div > h2 {
+shelf tile header {
+    background-color: rgba(0, 0, 0, .6);
+    bottom: 0;
+    padding: .5rem .5rem;
     position: absolute;
-    bottom: .5rem;
+    width: 100%;
+}
+
+shelf tile header.light {
+    background-color: rgba(255, 255, 255, .6);
+}
+
+shelf tile img {
+    background-size: cover !important;
+    float: left;
+    height: 3.2rem;
+    margin: 0 .5rem 0 0;
+    width: 3.2rem;
+}
+
+shelf tile h2 {
+    color: whitesmoke;
+    float: left;
+    line-height: 3.2rem;
 }

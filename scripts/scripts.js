@@ -6,17 +6,23 @@
         construct: function () {
             const shelf = document.querySelector('shelf');
             const shows = PRGRSS.SHOWS;
-            const compounds = document.createElement("ul");
+            const compounds = CMPNNTS.createAll("ul");
 
             for (const show in shows) {
-                const compound = document.createElement("li");
-                const stage = document.createElement("div");
-                stage.setAttribute("style", "background: url(images/tiles/" + shows[show].file + ".png);");
-                const title = document.createElement("h2");
-                title.innerHTML = shows[show].title;
+                const compound = CMPNNTS.createAll("li");
+                const tile = CMPNNTS.create.tile();
+                tile.setAttribute("style", "background: url(images/tiles/" + shows[show].file + ".png);");
 
-                stage.appendChild(title);
-                compound.appendChild(stage);
+                const meta =  CMPNNTS.createAll("header");
+                const title = CMPNNTS.createAll("h2");
+                title.innerHTML = shows[show].title;
+                const ident = CMPNNTS.create.ident();
+                ident.setAttribute("style", "background: url(images/idents/7" + shows[show].channel + ".png);");
+
+                meta.appendChild(ident);
+                meta.appendChild(title);
+                tile.appendChild(meta);
+                compound.appendChild(tile);
 
                 compounds.appendChild(compound);
             }

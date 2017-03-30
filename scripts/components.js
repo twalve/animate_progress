@@ -9,6 +9,14 @@
 
                 return ident;
             },
+            progress: function (classname) {
+                const duration = document.createElement("duration");
+                const elapsed = document.createElement("span");
+                elapsed.classList.add(classname);
+                duration.appendChild(elapsed);
+
+                return duration;
+            },
             shelf: function () {
                 return document.createElement("shelf");
             },

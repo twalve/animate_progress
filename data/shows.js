@@ -6,7 +6,7 @@ const SHOWS = [
         file: "homeandaway",
         channel: "two",
         duration: 37,
-        elapsed: 12,
+        elapsed: 36,
     },
     {
         title:"My Kitchen Rules",

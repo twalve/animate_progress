@@ -1,4 +1,6 @@
 body {
+    background: black;
+    color: black;
     font-family: Lato, sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -12,16 +14,16 @@ shelf {
     display: block;
 }
 
-shelf {
-    background: orange;
+tile {
+    display: block;
+}
+
+duration {
+    display: block;
 }
 
 shelf > ul > li {
     position: relative;
-}
-
-tile {
-    display: block;
 }
 
 shelf tile {
@@ -54,4 +56,18 @@ shelf tile h2 {
     color: whitesmoke;
     float: left;
     line-height: 3.2rem;
+}
+
+shelf duration {
+    background-color: silver;
+    height: .125rem;
+    position: relative;
+}
+
+shelf duration span {
+    animation-timing-function: linear;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: .125rem;
+    position: absolute;
 }
